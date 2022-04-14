@@ -13,7 +13,7 @@
     position: relative;
     img {
         position: absolute;
-        width: 200px;
+        width: 150px;
     }
 }
 
@@ -28,7 +28,7 @@
 
 .played-card {
     right: 25px;
-    transform: scale(1.3) translateX(140px) translateY(-300px) rotate(-200deg);
+    transform: scale(1.1) translateX(200px) translateY(-300px) rotate(-200deg);
 }
 
 .pick-card {
@@ -81,5 +81,15 @@
     position: absolute;
     right: 32px;
     bottom: 32px;
+
+}
+
+.pin-bottem {
+
+    position: absolute;
+    bottom: 32px;
+    right: 100px;
+    left: 100px;
+
 
 }

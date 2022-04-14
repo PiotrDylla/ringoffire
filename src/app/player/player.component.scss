@@ -10,13 +10,18 @@
         margin-left: 16px;
     }
 
-    background-color: rgb(182, 34, 34);
+    background-color: rgb(120, 99, 99);
     
     img {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         object-fit: cover;
     }
+
+}
+
+.player-active {
+    background-color:  rgb(182, 34, 34)!important;
 
 }
 
