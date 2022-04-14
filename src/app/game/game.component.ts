@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from 'src/models/game';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player.component';
+//import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player.component';
+
+
 
 @Component({
   selector: 'app-game',
@@ -9,24 +14,45 @@ import { Game } from 'src/models/game';
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
   
-  currentCard: string = '';
-  //game: Game; 
+  currentCard!: string;
+  game!: Game; 
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { 
+  
+  }
 
   ngOnInit(): void {
     this.newGame();
   }
 
   newGame(){
-    //this.game = new Game();
-    //console.log(this.game);
+    this.game = new Game();
+   // console.log(this.game);
   }
 
 
   takeCard() {
-   // this.currentCard = this.game?.stack.pop();
-    this.pickCardAnimation = true;
-  }
+  if(!this.pickCardAnimation) {
+  this.currentCard = this.game.stack.pop()!;
+  this.pickCardAnimation = true;
+  
 
+  setTimeout(() => {
+    this.game.playedCards.push(this.currentCard);
+    this.pickCardAnimation = false;
+  },1000)
+  }
 }
+
+
+openDialog(): void {
+  const dialogRef = this.dialog.open(DialogAddPlayerComponent);
+
+  dialogRef.afterClosed().subscribe((name: string) => {
+   
+    this.game.players.push(name);
+    
+  });
+}
+}
+
