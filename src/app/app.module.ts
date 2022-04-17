@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { GameInfoComponent } from './game-info/game-info.component';
 import {MatCardModule} from '@angular/material/card';
+import { FireComponent } from './fire/fire.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatCardModule} from '@angular/material/card';
     GameComponent,
     PlayerComponent,
     DialogAddPlayerComponent,
-    GameInfoComponent
+    GameInfoComponent,
+    FireComponent
   ],
   imports: [
     BrowserModule,
