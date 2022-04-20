@@ -105,3 +105,9 @@ transform: translate(-10px, -40px) rotate(180deg);
 opacity: 0;
 }
 }
+
+@media only screen and (max-width: 900px) { 
+    .mo-fire {
+        display: none;
+    }
+}

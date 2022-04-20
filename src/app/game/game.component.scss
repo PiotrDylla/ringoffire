@@ -100,5 +100,20 @@
 
 }
 
+@media only screen and (max-width: 900px) {
+    .card-stack {
+        width: 50px;
+
+    }
+
+    .played-card {
+        top: 50px;
+        right: 150px;
+    }
+
+    .info-container {
+        background-color: aqua;
+    }
 
 
+}

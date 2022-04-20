@@ -36,3 +36,14 @@ img {
 }
 
 }
+
+@media only screen and (max-width: 900px) {
+    .start-screen {
+
+        img {
+            
+            height: 100%;
+        }
+    }
+
+}
