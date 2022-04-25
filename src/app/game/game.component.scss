@@ -108,26 +108,25 @@
     }
 
     .played-card {
-        top: 70px;
+        top: 75px;
         right: 150px;
         height: 200px;
+        
     }
 
     .info-container {
         background-color: aqua;
     }
 
-    .top-card {
-
-        touch-action: {
-            transform: scale(0) translateY(0sspx);
-        }
+    .top-card:hover {
+    transform: scale(1.01);
+        
     
      
     }
 
     .pick-card {
-        transform: scale(0) translateX(140px) translateY(-300px) rotate(-200deg);
+    
 
     }
 
