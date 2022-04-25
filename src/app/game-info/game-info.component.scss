@@ -4,9 +4,11 @@
 
 @media only screen and (max-width: 900px) {
     .info-container {
+        height: auto;
         bottom: -20px;
         width: 110%;
         left: -70px;
+        font-size: 10px;
     }
 }
 

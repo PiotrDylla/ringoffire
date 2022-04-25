@@ -102,17 +102,33 @@
 
 @media only screen and (max-width: 900px) {
     .card-stack {
-        width: 50px;
+        width: 30px;
+        height: 80px;
 
     }
 
     .played-card {
-        top: 50px;
+        top: 70px;
         right: 150px;
+        height: 200px;
     }
 
     .info-container {
         background-color: aqua;
+    }
+
+    .top-card {
+
+        touch-action: {
+            transform: scale(0) translateY(0sspx);
+        }
+    
+     
+    }
+
+    .pick-card {
+        transform: scale(0) translateX(140px) translateY(-300px) rotate(-200deg);
+
     }
 
 
