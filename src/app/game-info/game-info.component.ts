@@ -1,4 +1,5 @@
 import { Component, Input, OnInit,OnChanges } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-game-info',
@@ -27,7 +28,7 @@ export class GameInfoComponent implements OnInit, OnChanges {
   @Input() card: string ="";
 
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
