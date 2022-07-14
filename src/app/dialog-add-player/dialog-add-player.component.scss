@@ -1,8 +1,24 @@
-.mat-dialog-container {
-    background-color: aqua;
+
+::ng-deep.mat-dialog-container {
+    box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024, 0 9px 46px 8px #0000001f;
+    background: #e78607;
+    color: #fff;
+}
+::ng-deep.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #e61912 !important;
+    font-size: 20px;
+}
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #ffffff !important;
+}
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #E61912 !important;
+    ;
 }
 
-#mat-dialog-0 {
-    background-color: aqua;
-}
-
+/*::ng-deep.mat-dialog-container {
+    padding: 10px !important;
+}*/
